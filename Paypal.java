@@ -8,16 +8,15 @@ package pagementos;
  *
  * @author ARTHURCIDADEMATTJIE
  */
-public class Main {
+public class Paypal implements Pagamento {
+    String email;
     
-    
-    
-    public static void main(String[] args) {
-        CartaoCredito CartaoCredito = new CartaoCredito();
-        Paypal Paypal = new Paypal();
-        
-        Paypal.processarPagamento(10.0);
-        CartaoCredito.processarPagamento(50.0);
-        
+    @Override
+    public void processarPagamento(double valor){
+        System.out.println("Pagamento de R$ valor processado via PayPal");
+    }
+    @Override
+    public String obterDetalhes(){
+        return email;
     }
 }
