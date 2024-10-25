@@ -8,9 +8,10 @@ package loja;
  *
  * @author ARTHURCIDADEMATTJIE
  */
-abstract class produto {
-    String descr;
-    double valor;
-    
-    public abstract void mostrarDescricao();
+public class bola extends produto{
+    String descr = "Usa pra jogar jogos com ele";
+    double valor = 250.0;
+    public void mostrarDescricao(){
+       System.out.println(descr + "\n e seu valor:" + valor + "$");
+    }
 }

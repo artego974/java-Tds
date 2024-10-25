@@ -8,9 +8,11 @@ package loja;
  *
  * @author ARTHURCIDADEMATTJIE
  */
-abstract class produto {
-    String descr;
-    double valor;
+public class creatina extends produto{
+    String descr = "suplemento para academia";
+    double valor = 120.0;
     
-    public abstract void mostrarDescricao();
+    public void mostrarDescricao(){
+       System.out.println(descr + "\n e seu valor:" + valor + "$");
+    }
 }

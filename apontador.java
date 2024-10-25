@@ -8,9 +8,10 @@ package loja;
  *
  * @author ARTHURCIDADEMATTJIE
  */
-abstract class produto {
-    String descr;
-    double valor;
-    
-    public abstract void mostrarDescricao();
+public class apontador extends produto{
+    String descr = "ultilizado para apontar os lapis";
+    double valor = 2.0;
+    public void mostrarDescricao(){
+       System.out.println(descr + "\n e seu valor:" + valor + "$");
+    }
 }
